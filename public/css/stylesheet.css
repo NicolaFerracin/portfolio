@@ -12,18 +12,8 @@
 }
 
 /* Layout & Typography */
-@font-face {
-    font-family: "gidole";
-    src: url("../assets/fonts/Gidole-Regular.otf");
-}
-
 body {
-    font-family: "gidole";
     background-color: var(--bg-color) !important;
-}
-
-*:not(i) {
-    font-family: "gidole" !important;
 }
 
 p {
