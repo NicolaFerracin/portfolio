@@ -53,6 +53,6 @@
     }
 
     window.addEventListener('DOMContentLoaded', function() {
-        var portfolio = new Portfolio();
+        const portfolio = new Portfolio();
     });
 }());
