@@ -1,268 +1,180 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicola Ferracin | Portfolio</title>
-    <link rel="stylesheet" href="./public/css/material.min.css">
-    <script src="./public/js/material.min.js"></script>
-    <link rel="stylesheet" href="./public/css/stylesheet.css">
-    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-
-<body>
-    <div class="container mdl-card mdl-shadow--2dp">
-        <div class="row">
-            <div class="mdl-card__content col-sm-6">
-                <h1>Nicola Ferracin</h1>
-            </div>
-            <div class="mdl-card__content col-sm-6">
-                <div class="contacts">
-                    <a href="https://github.com/NicolaFerracin" title="GitHub: NicolaFerracin" target="_blank">
-                        <i class="fa fa-github fa-3x"></i>
-                    </a>
-                    <a href="mailto:hello@nicolaferracin.com" title="hello@nicolaferracin.com" target="_blank">
-                        <i class="fa fa-envelope-o fa-3x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nicola-ferracin-0861b372/?locale=en_US" title="Nicola Ferracin | Linkedin" target="_blank">
-                        <i class="fa fa-linkedin fa-3x"></i>
-                    </a>
-                </div>
-            </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicola Ferracin | Software Engineer</title>
+    <link rel="stylesheet" href="./public/css/stylesheet.css" />
+    <link rel="stylesheet" href="./public/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    <div class="container">
+      <section id="intro">
+        <h1><strong>Nicola Ferracin</strong></h1>
+        <h2>
+          Software Engineer at
+          <a target="_blank" href="https://www.raisin.com/about-raisin/">Raisin GmbH</a>
+        </h2>
+      </section>
+      <section id="raisin">
+        <div class="toggle inactive"><h3># My work at Raisin</h3><span class="indicator"></span></div>
+        <div class="hidden">
+          <p>I joined Raisin in 2016 as a junior frontend developer and in the years I've been working here I've had the chance to grow immensely as a developer up to becoming a software engineer and I got the opportunity to tackle interesting problems together with my team.</p>
+          <h4>## Responsiveness ~ 2016/2017</h4>
+          <p>
+            Brought the Online Banking Application to mobile users, applying responsive web design techniques across all pages, starting from a completely non-responsive state.
+          </p>
+          <h4>## Investment Products ~ 2017/2018</h4>
+          <p>
+            Used the development of a new line of products as a chance to move away from the legacy monolith Java/JSP frontend/backend application. Start anew with a React application communicating with the backend via a RESTful API.
+          </p>
+          <h4>## React migration ~ 2018/2019</h4>
+          <p>
+            The Investment Products React app was so well received by different teams in the company and by the customers that my team was tasked with migrating the whole Java/JSP app over to React. The project accomplished the full decoupling of frontend and backend, which resulted in a smoother development process of the app, higher maintainability, less bugs and improvement in hiring thanks to the use of modern technologies.
+          </p>
+          <h4>## Testing ~ 2018/2019</h4>
+          <p>
+            The migration to React gave my team the opportunity to drastically improve test coverage of our codebase: we manage to bring it from single digit to over 70%.
+          </p>
+          <h4>## Working Remotely ~ 2018/2019/2020</h4>
+          <p>
+            In January 2018 I started working remotely full-time while living in different cities around the world. Even with considerable time difference of up to 9 hours, I was always able to deliver features, meet deadlines and be an active part of my team. 2020 is my third year as a remote member of my team.
+          </p>
         </div>
-        <div class="row">
-            <div class="mdl-card__content">
-                <p>
-                    Hey! Thanks for dropping by! 
-                </p>
-                <p>
-                    My name is Nicola and I'm a <strong>Freelance Frontend Developer</strong> based in Berlin. I'm passionate about coding in <strong>JavaScript</strong> and experimenting with different tools.
-                </p>
-                <p>
-                    I'm currently working at <a target="_blank" href="https://www.raisin.com/about-raisin/"><u>Raisin GmbH</u></a> as a Freelance Frontend Developer.
-                </p>
-            </div>
+      </section>
+      <hr />
+      <section id="freelancing">
+        <div class="toggle inactive"><h3># Freelancing</h3><span class="indicator"></span></div>
+        <div class="hidden">
+          <h4>## 2018</h4>
+          <ul>
+            <li>
+              <a href="https://crewrides.pt/" target="_blank">Crew Rides</a>
+              - <span class="excerpt">Wordpress Website</span>
+              <p>
+                Customize a premium theme and optimize for marketing and SEO. Work in team with a
+                designer and a marketing expert. Self-hosted on a VPS.
+              </p>
+            </li>
+          </ul>
+          <h4>## 2017</h4>
+          <ul>
+            <li>
+              <a href="https://sofiamacedo.com/" target="_blank">Sofia Macedo</a>
+              - <span class="excerpt">Wordpress Website</span>
+              <p>
+                Fully customized theme and widgets. Self hosted on OVH VPS server.
+              </p>
+            </li>
+          </ul>
         </div>
-        <div class="row projects">
-            <div class="project">
-                <div class="project__preview project-sofiamacedo">
-                    <div class="project-sofiamacedo__bg project-sofiamacedo__bg1 col-xs-3"></div>
-                    <div class="project-sofiamacedo__bg project-sofiamacedo__bg2 col-xs-3"></div>
-                    <div class="project-sofiamacedo__bg project-sofiamacedo__bg3 col-xs-3"></div>
-                    <div class="project-sofiamacedo__bg project-sofiamacedo__bg4 col-xs-3"></div>
-                    <h2 class="project-title">sofiamacedo.com</h2>
-                    <div class="project__footer">
-                        <a class="btn-nf" href="https://sofiamacedo.com" target="_blank" title="Visit sofiamacedo.com">
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                            <span>Visit sofiamacedo.com</span>
-                        </a>
-                        <a class="project__info-open btn-nf" data-trigger="sofiamacedo-info" title="More info">
-                            <i class="fa fa-info" aria-hidden="true"></i>
-                            <span>More info</span>
-                        </a>
-                    </div>
-                </div>
-                <div id="sofiamacedo-info" class="project__info">
-                    <a class="project__info-close" data-trigger="sofiamacedo-info" title="Close info">
-                        <i class="fa fa-close" aria-hidden="true"></i>
-                    </a>
-                    <div class="project__info-content">
-                        <div>
-                            <strong>Name</strong>: <a href="https://sofiamacedo.com/" target="_blank" title="Visit sofiamacedo.com">sofiamacedo.com</a>
-                        </div>
-                        <div>
-                            <strong>Type</strong>: Website
-                        </div>
-                        <div>
-                            <strong>Design</strong>: <a href="http://edzr.net/" target="_blank" title="Designed by edzr.net">edzr.net</a>
-                        </div>
-                        <div>
-                            <strong>Tech Stack</strong>: Grav CMS (PHP), JavaScript, Twig templating, LESS
-                        </div>
-                        <div>   
-                            <strong>Hosting</strong>: Self-hosted on VPS, Debian, Nginx
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__preview project-budgetify">
-                    <h2 class="project-title">Budgetify</h2>
-                    <div class="project__footer">
-                        <a class="btn-nf" href="https://budgetify.me" target="_blank" title="Visit budgetify.me">
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                            <span>Visit Budgetify.me</span>
-                        </a>
-                        <a class="btn-nf" href="https://github.com/NicolaFerracin/budgetify" target="_blank" title="See budgetify.me repo">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            <span>See repo</span>
-                        </a>
-                        <a class="project__info-open btn-nf" data-trigger="budgetify-info" title="More info">
-                            <i class="fa fa-info" aria-hidden="true"></i>
-                            <span>More info</span>
-                        </a>
-                    </div>
-                </div>
-                <div id="budgetify-info" class="project__info">
-                    <a class="project__info-close" data-trigger="budgetify-info" title="Close info">
-                        <i class="fa fa-close" aria-hidden="true"></i>
-                    </a>
-                    <div class="project__info-content">
-                        <div>
-                            <strong>Name</strong>: <a href="https://budgetify.me/" target="_blank" title="Visit budgetify.me">budgetify.me</a>
-                        </div>
-                        <div>
-                            <strong>Type</strong>: Web App
-                        </div>
-                        <div>
-                            <strong>Description</strong>: Track all of your expenses. Plan your savings. All in one place.
-                        </div>
-                        <div>
-                            <strong>Design</strong>: Original design with <a href="https://adminlte.io/" target="_blank" title="AdminLTE Control Panel Template">AdminLTE framework</a>
-                        </div>
-                        <div>
-                            <strong>Backend Stack</strong>: Node.js, Express, MongoDB with Mongoose, Passport
-                        </div>
-                        <div>
-                            <strong>Frontend Stack</strong>: Webpack, SASS, Pug templating, JavaScript 
-                        </div>
-                        <div>
-                            <strong>Hosting</strong>: Self-hosted on VPS, Debian, Nginx, pm2
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__preview project-js30">
-                    <h2 class="project-title">JavaScript 30 days challenge</h2>
-                    <div class="project__footer">
-                        <a class="btn-nf" href="../javascript30/index.html" target="_blank" title="See challenges">
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                            <span>See challenges</span>
-                        </a>
-                        <a class="btn-nf" href="https://github.com/NicolaFerracin/javascript30" target="_blank" title="See JavaScript30 repo">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            <span>See repo</span>
-                        </a>
-                        <a class="project__info-open btn-nf" data-trigger="js30-info" title="More info">
-                            <i class="fa fa-info" aria-hidden="true"></i>
-                            <span>More info</span>
-                        </a>
-                    </div>
-                </div>
-                <div id="js30-info" class="project__info">
-                    <a class="project__info-close" data-trigger="js30-info" title="Close info">
-                        <i class="fa fa-close" aria-hidden="true"></i>
-                    </a>
-                    <div class="project__info-content">
-                        <div>
-                            <strong>Name</strong>: <a href="javascript30" target="_blank" title="See the challenges">JavaScript 30 days challenge</a> (by <a href="https://javascript30.com/" target="_blank" title="JavaScript 30 days challenge by Wes Bos">Wes Bos</a>)
-                        </div>
-                        <div>
-                            <strong>Description</strong>: Implement smart solutions for everyday problems in Vanilla JavaScript.
-                        </div>
-                        <div>
-                            <strong>Tech Stack</strong>: Vanilla JavaScript, CSS, HTML5 APIs
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__preview project-taadas">
-                    <h2 class="project-title">TAADAS</h2>
-                    <div class="project__footer">
-                        <a class="btn-nf" href="https://taadas.org" target="_blank" title="Visit taadas.org">
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                            <span>Visit taadas.org</span>
-                        </a>
-                        <a class="project__info-open btn-nf" data-trigger="taadas-info" title="More info">
-                            <i class="fa fa-info" aria-hidden="true"></i>
-                            <span>More info</span>
-                        </a>
-                    </div>
-                </div>
-                <div id="taadas-info" class="project__info">
-                    <a class="project__info-close" data-trigger="taadas-info" title="Close info">
-                        <i class="fa fa-close" aria-hidden="true"></i>
-                    </a>
-                    <div class="project__info-content">
-                        <div>
-                            <strong>Name</strong>: <a href="https://taadas.com/" target="_blank" title="Visit taadas.com">taadas.com</a> (Tennessee Association of Alcohol, Drug, and other Addiction Services)
-                        </div>
-                        <div>
-                            <strong>Type</strong>: Website
-                        </div>
-                        <div>
-                            <strong>Description</strong>: Full Stack project developed pro bono for TAADAS, a US-based NGO, as part of the final assignments in the curriculum of <a href="https://www.freecodecamp.org/about/" target="_blank" title="Find out more about FreeCodeCamp.com">FreeCodeCamp.com</a>.
-                        </div>
-                        <div>
-                            <strong>Backend Stack</strong>: Node.js, Express, MongoDB with Mongoose
-                        </div>
-                        <div>
-                            <strong>Frontend Stack</strong>: Apostrophe CMS (JavaScript), JavaScript, nunjucks templating, LESS
-                        </div>
-                        <div>
-                            <strong>Other tools</strong>: C9.io shared workspace, GitHub
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__preview project-svec">
-                    <h2 class="project-title">SVEC</h2>
-                    <div class="project__footer">
-                        <a class="btn-nf" href="https://svec.org" target="_blank" title="Visit svec.org">
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                            <span>Visit svec.org</span>
-                        </a>
-                        <a class="project__info-open btn-nf" data-trigger="svec-info" title="More info">
-                            <i class="fa fa-info" aria-hidden="true"></i>
-                            <span>More info</span>
-                        </a>
-                    </div><span>
-                </div>
-                <div id="svec-info" class="project__info">
-                    <a class="project__info-close" data-trigger="svec-info" title="Close info">
-                        <i class="fa fa-close" aria-hidden="true"></i>
-                    </a>
-                    <div class="project__info-content">
-                        <div>
-                            <strong>Name</strong>: <a href="https://svec.org/" target="_blank" title="Visit svec.org">svec.org</a> (Silicon Valley Engineering Council)
-                        </div>
-                        <div>
-                            <strong>Type</strong>: Website
-                        </div>
-                        <div>
-                            <strong>Description</strong>: Full Stack project developed pro bono for SVEC, a US-based NGO, as part of the final assignments in the curriculum of <a href="https://www.freecodecamp.org/about/" target="_blank" title="Find out more about FreeCodeCamp.com">FreeCodeCamp.com</a>.
-                        </div>
-                        <div>
-                            <strong>Backend Stack</strong>: Node.js, Express, MongoDB with Mongoose
-                        </div>
-                        <div>
-                            <strong>Frontend Stack</strong>: Apostrophe CMS (JavaScript), JavaScript, nunjucks templating, LESS
-                        </div>
-                        <div>
-                            <strong>Other tools</strong>: C9.io shared workspace, Bibucket, Amazon S3
-                        </div>
-                        <div>
-                            <strong>Hosting</strong>: Heroku
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </section>
+      <hr />
+      <section id="projects">
+        <div class="toggle inactive"><h3># Projects</h3><span class="indicator"></span></div>
+        <div class="hidden">
+          <h4>## 2019</h4>
+          <ul>
+            <li>
+              <a href="https://github.com/NicolaFerracin/michelin-stars-restaurants-api" target="_blank"
+                >michelin-stars-restaurants-api</a
+              >
+              - <span class="excerpt">NodeJS scraper + Go API</span>
+              <p>Given the lack of official lists of Michelin Star Restaurants, I wrote an application that scrapes the official Michelin page daily and then serves the list of restaurants via an API endpoint built with Go.</p>
+            </li>
+            <li>
+              <a href="https://github.com/NicolaFerracin/check-gdrive-files" target="_blank"
+                >check-gdrive-files</a
+              >
+              - <span class="excerpt">NodeJS script</span>
+              <p>Check if local files exist on Google Drive storage.</p>
+            </li>
+            <li>
+              <a
+                href="https://github.com/NicolaFerracin/amazon-to-goodreads-exporter"
+                target="_blank"
+                >amazon-to-goodreads-exporter</a
+              >
+              - <span class="excerpt">NodeJS interactive command line tool</span>
+              <p>
+                Export your books from Amazon wishlists to Goodreads' shelves via the command line.
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://github.com/NicolaFerracin/multiple-urls-images-downloader"
+                target="_blank"
+                >multiple-urls-images-downloader</a
+              >
+              - <span class="excerpt">npm package</span>
+              <p>
+                Given a list of URLs, download images from each page and store them in separate PDFs.
+              </p>
+            </li>
+          </ul>
+          <h4>## 2017</h4>
+          <ul>
+            <li>
+              <a href="https://github.com/NicolaFerracin/budgetify" target="_blank">Budgetify</a>
+              [Archived] - <span class="excerpt">Full-stack NodeJS Web Application</span>
+              <p>
+                Budgeting app built in JavaScript. Some of the tools used: NodeJS, express, pug,
+                mongoose, passport, sendgrid.
+              </p>
+            </li>
+          </ul>
+          <h4>## 2016</h4>
+          <ul>
+            <li>
+              <a href="https://taadas.org" target="_blank">TAADAS</a> (Tennessee Association of
+              Alcohol, Drug, and other Addiction Services) -
+              <span class="excerpt">Website built with Apostrophe CMS</span>
+              <p>
+                Full-stack project developed pro bono for TAADAS, a US-based NGO, as part of the
+                final assignments in the curriculum of FreeCodeCamp.com.
+              </p>
+            </li>
+            <li>
+              <a href="https://www.svec.org/" target="_blank">SVEC</a> (Silicon Valley Engineering
+              Council) -
+              <span class="excerpt">Website built with Apostrophe CMS</span>
+              <p>
+                Full-stack project developed pro bono for SVEC, a US-based NGO, as part of the final assignments in the curriculum of FreeCodeCamp.com.
+              </p>
+            </li>
+          </ul>
         </div>
+      </section>
+      <hr />
+      <section>
+        <div class="toggle inactive"><h3># My toolkit</h3><span class="indicator"></span></div>
+        <div class="hidden">
+          <p>
+            I develop <strong>React</strong> applications with <strong>JavaScript</strong>. <strong>Jest</strong> and <strong>enzyme</strong> are my libraries of choice for unit testing.
+          </p>
+          <p>
+            I enjoy developing scripts and full-stack projects with <strong>NodeJS</strong>, <strong>express</strong> and any other tool that fits my needs.
+          </p>
+        </div>
+      </section>
     </div>
     <script src="./public/js/portfolio.js"></script>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-84316015-1', 'auto');
-        ga('send', 'pageview');
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-84316015-1', 'auto');
+      ga('send', 'pageview');
     </script>
-</body>
+  </body>
 </html>
