@@ -9,7 +9,7 @@
   --green: #66bb6a;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --bg-color: #393939;
   --container-bg: #262626;
   --primary-color: #1795b0;
@@ -69,6 +69,10 @@ h4 {
   font-size: 1.3rem;
 }
 
+h5 {
+  font-size: 1.2rem;
+}
+
 ul {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -79,7 +83,7 @@ li {
   padding-left: 10px;
 }
 
-ul>li>p {
+ul > li > p {
   margin-top: 5px;
 }
 
@@ -131,20 +135,20 @@ ul>li>p {
   padding: 15px 0px;
 }
 
-.toggle>h3 {
+.toggle > h3 {
   margin: 0;
 }
 
-.toggle>span.indicator {
+.toggle > span.indicator {
   font-size: 2rem;
 }
 
 .toggle.inactive span.indicator:before {
-  content: '+'
+  content: '+';
 }
 
 .toggle.active span.indicator:before {
-  content: '-'
+  content: '-';
 }
 
 .hidden {
@@ -155,12 +159,16 @@ span.excerpt {
   font-style: italic;
 }
 
+.hash {
+  color: var(--primary-color);
+}
+
 /* dark mode slider switch */
 .theme-dark-wrapper {
   display: flex;
   align-items: center;
   float: right;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .theme-dark-wrapper em {
@@ -176,7 +184,7 @@ span.excerpt {
 }
 
 .theme-dark input {
-  display:none;
+  display: none;
 }
 
 .slider {
@@ -187,17 +195,17 @@ span.excerpt {
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   background-color: #fff;
   bottom: 4px;
-  content: "";
+  content: '';
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 26px;
 }
 
@@ -216,4 +224,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
