@@ -1,25 +1,25 @@
 (function() {
-  var accordions = document.querySelectorAll('.toggle');
-  accordions.forEach(a => a.addEventListener('click', toggleAccordion));
+  document
+    .querySelectorAll('.accordion')
+    .forEach(a => a.addEventListener('click', toggleAccordion));
 
-  var isDarkModeActive = localStorage.getItem('darkMode') !== null
-  ? localStorage.getItem('darkMode') === 'true'
-  : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDarkModeActive =
+    localStorage.getItem('darkMode') !== null
+      ? localStorage.getItem('darkMode') === 'true'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches;
   setDarkMode(isDarkModeActive);
-}());
+})();
+
+const OPEN_STATE = 'open';
+const CLOSED_STATE = 'closed';
 
 function toggleAccordion(e) {
-  var accordion = e.currentTarget;
-  var isActive = accordion.classList.contains('active');
-  var content = e.currentTarget.nextElementSibling;
-  if (isActive) {
-    accordion.classList.remove('active');
-    accordion.classList.add('inactive');
-  } else {
-    accordion.classList.remove('inactive');
-    accordion.classList .add('active');
-  }
-  content.classList.toggle('hidden')
+  const accordion = e.currentTarget;
+  const isOpen = accordion.classList.contains(OPEN_STATE);
+  const content = e.currentTarget.nextElementSibling;
+  accordion.classList.remove(isOpen ? OPEN_STATE : CLOSED_STATE);
+  accordion.classList.add(isOpen ? CLOSED_STATE : OPEN_STATE);
+  content.classList.toggle('hidden');
 }
 
 function setDarkMode(darkMode) {
@@ -29,6 +29,6 @@ function setDarkMode(darkMode) {
 }
 
 function toggleDarkMode(e) {
-  var isDarkModeActive = e.checked;
+  const isDarkModeActive = e.checked;
   setDarkMode(isDarkModeActive);
 }

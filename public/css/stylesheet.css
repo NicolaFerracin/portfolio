@@ -127,7 +127,7 @@ ul > li > p {
 }
 
 /* Accordion Styles */
-.toggle {
+.accordion {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -135,19 +135,19 @@ ul > li > p {
   padding: 15px 0px;
 }
 
-.toggle > h3 {
+.accordion > h3 {
   margin: 0;
 }
 
-.toggle > span.indicator {
+.accordion > span.indicator {
   font-size: 2rem;
 }
 
-.toggle.inactive span.indicator:before {
+.accordion.inactive span.indicator:before {
   content: '+';
 }
 
-.toggle.active span.indicator:before {
+.accordion.active span.indicator:before {
   content: '-';
 }
 
