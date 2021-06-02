@@ -172,8 +172,7 @@ span.excerpt {
 }
 
 .theme-dark-wrapper em {
-  margin-left: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .theme-dark {
@@ -223,4 +222,24 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#intro {
+  margin-bottom: 30px;
+}
+
+#intro .intro-cv {
+  display: inline-flex;
+  align-items: center;
+}
+
+#intro .intro-cv .material-icons {
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--primary-color);
 }

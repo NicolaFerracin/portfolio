@@ -4,14 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicola Ferracin | Software Engineer</title>
     <link rel="stylesheet" href="./public/css/stylesheet.css" />
-    <link rel="stylesheet" href="./public/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
       <div class="theme-dark-wrapper">
         <label class="theme-dark" for="darkMode">
-          <input type="checkbox" id="darkMode" onchange="toggleDarkMode(this)" />
+          <input type="checkbox" id="darkMode" name="dark-mode" onchange="toggleDarkMode(this)" />
           <div class="slider round"></div>
         </label>
         <em>Dark mode</em>
@@ -19,89 +18,74 @@
       <section id="intro">
         <h1><strong>Nicola Ferracin</strong></h1>
         <h2>
-          Software Engineer at
-          <a target="_blank" href="https://www.raisin.com/about-raisin/">Raisin GmbH</a>
+          Software Engineer
         </h2>
-      </section>
-      <section id="raisin">
-        <div class="accordion closed">
-          <h3><span class="hash">#</span> My work at Raisin</h3>
-          <span class="indicator"></span>
-        </div>
-        <div class="hidden">
-          <p>
-            I joined Raisin in 2016. I started as a junior frontend developer and through the years
-            I've had the chance to tackle interesting problems together with my team and to grow
-            immensely as a developer, up to becoming a software engineer.
-          </p>
-          <h4><span class="hash">##</span> Main Achievements</h4>
-          <h5><span class="hash">###</span> Responsiveness ~ 2016/2017</h5>
-          <p>
-            Brought our customers facing web app to mobile users, applying responsive web design
-            techniques across the whole app, starting from a completely non-responsive state.
-          </p>
-          <h5><span class="hash">###</span> Investment Products React app ~ 2017/2018</h5>
-          <p>
-            Started the company's move toward a modern tech stack by developing a new client-side
-            React application, communicating with the backend via a RESTful API.
-          </p>
-          <h5><span class="hash">###</span> React migration ~ 2018/2019</h5>
-          <p>
-            Migrated the Java/JSP monolith legacy app over to React. The project accomplished the
-            full decoupling of frontend and backend, which resulted in a smoother development
-            process, higher maintainability, less bugs and improvement in hiring thanks to the use
-            of modern technologies.
-          </p>
-          <h5><span class="hash">###</span> Testing ~ 2018/2019/2020</h5>
-          <p>Increased unit test coverage, from single digit to over 70%.</p>
-          <p>Migrated integration tests from Selenium to Cypress.</p>
-          <h5><span class="hash">###</span> Working Remotely ~ 2018/2019/2020</h5>
-          <p>
-            In January 2018 I started working remotely full-time while living in different cities
-            around the world. Even with considerable time difference (at times up to 9 hours), I was
-            always able to deliver features, meet deadlines and be an active part of my team. 2020
-            is my third year as a remote member of my team.
-          </p>
-        </div>
+        <p>I develop frontend applications with React.</p>
+        <p>During the day I work at [<a target="_blank" href="https://www.raisin.com/about-raisin/">Raisin GmbH</a>].</p>
+        <p>In my free time I try to [<a data-accordion="stay-relevant" href="#">stay relevant</a>], I love [<a href="#" data-accordion="scripts-and-automation">automating things</a>] and [<a href="#" data-accordion="scripts-and-automation">writing scripts</a>] and sometimes I build [<a href="#" data-accordion="projects">full-stack applications</a>] for fun, learning and out of personal needs.</p>
+        <p>From time to time I do some [<a href="#" data-accordion="freelancing">freelancing projects</a>].</p>
+        <p>Besides coding all the time, I also do [<a href="#" data-accordion="other">other things</a>].</p>
+        <p>Check out my CV for more details on my career:</p>
+        <a class="intro-cv" href="./CV_NicolaFerracin.pdf" target="_blank"><span class="material-icons">&#xe89e;</span>Open CV</a>
       </section>
       <hr />
-      <section id="freelancing">
+      <section id="stay-relevant">
         <div class="accordion closed">
-          <h3><span class="hash">#</span> Freelancing</h3>
+          <h3><span class="hash">#</span> Stay Relevant</h3>
           <span class="indicator"></span>
         </div>
         <div class="hidden">
-          <h4><span class="hash">##</span> 2018</h4>
           <ul>
             <li>
-              <a href="https://crewrides.pt/" target="_blank">Crew Rides</a>
-              - <span class="excerpt">Wordpress Website</span>
+              <a
+                href="https://github.com/NicolaFerracin/sick-fits"
+                target="_blank"
+                >sick-fits</a
+              >
               <p>
-                Customize a premium theme and optimize for marketing and SEO. Work in team with a
-                designer and a marketing expert. Self-hosted on a VPS.
+                Fullstack Advanced React & GraphQL course by Wes Bos.
+                <br />
+                Course: <a href="https://advancedreact.com/" target="_blank">https://advancedreact.com/</a>
               </p>
             </li>
-          </ul>
-          <h4><span class="hash">##</span> 2017</h4>
-          <ul>
             <li>
-              <a href="https://sofiamacedo.com/" target="_blank">Sofia Macedo</a>
-              - <span class="excerpt">Wordpress Website</span>
+              <a href="https://github.com/NicolaFerracin/css-grid" target="_blank"
+                >css-grid</a
+              >
+              <p>CSS Grid Video Course by Wes Bos.
+                <br />
+                Course: <a href="https://cssgrid.io/" target="_blank">https://cssgrid.io/</a></p>
+            </li>
+            <li>
+              <a
+                href="https://github.com/NicolaFerracin/ComputerScience"
+                target="_blank"
+                >ComputerScience</a>
               <p>
-                Fully customized theme and widgets. Self hosted on OVH VPS server.
+                Repository containing all the projects completed following the courses suggested by the OpenSourceSociety University. Plus CS-related material as data structures and algorithms.
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://github.com/NicolaFerracin/node-course"
+                target="_blank"
+                >node-course</a>
+              <p>
+                Fullstack node course by Wes Bos.
+                <br />
+                Course: <a href="https://learnnode.com/" target="_blank">https://learnnode.com/</a>
               </p>
             </li>
           </ul>
         </div>
       </section>
       <hr />
-      <section id="projects">
+      <section id="scripts-and-automation">
         <div class="accordion closed">
-          <h3><span class="hash">#</span> Projects</h3>
+          <h3><span class="hash">#</span> Scripts & Automation</h3>
           <span class="indicator"></span>
         </div>
         <div class="hidden">
-          <h4><span class="hash">##</span> 2019</h4>
           <ul>
             <li>
               <a
@@ -142,27 +126,71 @@
               >
               - <span class="excerpt">npm package</span>
               <p>
-                Given a list of URLs, download images from each page and store them in separate
+                Given a list of page URLs, download images from each page and store them in separate
                 PDFs.
               </p>
             </li>
-          </ul>
-          <h4><span class="hash">##</span> 2017</h4>
-          <ul>
             <li>
-              <a href="https://github.com/NicolaFerracin/budgetify" target="_blank">Budgetify</a>
-              [Archived] - <span class="excerpt">Full-stack NodeJS Web Application</span>
+              <a
+                href="https://github.com/NicolaFerracin/utils"
+                target="_blank"
+                >utils</a
+              >
+              - <span class="excerpt">GitHub repo</span>
               <p>
-                Budgeting app built in JavaScript. Some of the tools used: NodeJS, express, pug,
-                mongoose, passport, sendgrid.
+                A collection of useful commands and scripts, mainly for managing thousands of photos (renaming, sorting by aspect ratio, finding from list...) plus some useful commands to manage my VPS (Virtual Private Server).
               </p>
             </li>
           </ul>
-          <h4><span class="hash">##</span> 2016</h4>
+        </div>
+      </section>
+      <hr />
+      <section id="projects">
+        <div class="accordion closed">
+          <h3><span class="hash">#</span> Projects</h3>
+          <span class="indicator"></span>
+        </div>
+        <div class="hidden">
           <ul>
             <li>
-              <a href="https://taadas.org" target="_blank">TAADAS</a> (Tennessee Association of
-              Alcohol, Drug, and other Addiction Services) -
+              <a
+                href="https://github.com/NicolaFerracin/books-read"
+                target="_blank"
+                >books-read</a
+              >
+              <p>
+                Firebase and React project to keep track of books read, with basic stats.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section id="freelancing">
+        <div class="accordion closed">
+          <h3><span class="hash">#</span> Freelancing</h3>
+          <span class="indicator"></span>
+        </div>
+        <div class="hidden">
+          <ul>
+            <li>
+              <a href="https://crewrides.pt/" target="_blank">Crew Rides</a> - Not online anymore (2018)
+              - <span class="excerpt">Wordpress Website</span>
+              <p>
+                Customize a premium theme and optimize for marketing and SEO. Work in team with a
+                designer and a marketing expert. Self-hosted on a VPS.
+              </p>
+            </li>
+            <li>
+              <a href="https://sofiamacedo.com/" target="_blank">Sofia Macedo</a> (2017)
+              - <span class="excerpt">Wordpress Website</span>
+              <p>
+                Fully customized theme and widgets. Self hosted on OVH VPS server.
+              </p>
+            </li>
+            <li>
+              <a href="https://taadas.org" target="_blank">TAADAS</a> - Not online anymore (Tennessee Association of
+              Alcohol, Drug, and other Addiction Services) (2016) -
               <span class="excerpt">Website built with Apostrophe CMS</span>
               <p>
                 Full-stack project developed pro bono for TAADAS, a US-based NGO, as part of the
@@ -171,7 +199,7 @@
             </li>
             <li>
               <a href="https://www.svec.org/" target="_blank">SVEC</a> (Silicon Valley Engineering
-              Council) -
+              Council) (2016) -
               <span class="excerpt">Website built with Apostrophe CMS</span>
               <p>
                 Full-stack project developed pro bono for SVEC, a US-based NGO, as part of the final
@@ -182,22 +210,28 @@
         </div>
       </section>
       <hr />
-      <section>
+      <section id="other">
         <div class="accordion closed">
-          <h3><span class="hash">#</span> My toolkit</h3>
+          <h3><span class="hash">#</span> Other Stuff</h3>
           <span class="indicator"></span>
         </div>
         <div class="hidden">
-          <p>
-            I develop <strong>React</strong> applications with <strong>JavaScript</strong>. I use
-            <strong>Jest</strong> and <strong>Cypress</strong> to test my code.
-          </p>
-          <p>
-            I enjoy developing scripts and full-stack projects with <strong>NodeJS</strong>,
-            <strong>express</strong> and any other tool that fits my needs.
-          </p>
+          <ul>
+            <li>
+              During 2018 and 2019 I worked remotely from around the world. I visited and stayed for some time in Spain, Italy, Portugal, Japan, Vietnam, Thailand, Laos, Cambodia, Colombia, Peru, Bolivia and Brasil. I'm now based in Portugal, where I live.
+            </li>
+            <li>
+              I like reading, playing videogames, hiking, playing the bass-guitar, act like I can play the guitar, travelling, languages (learning Japanese at the moment), splurge on Michelin starred restaurants.
+            </li>
+          </ul>
         </div>
       </section>
+      <hr />
+      <footer>
+        Built with HTML, CSS and vanilla JS.
+        <br/>
+        Dependencies: Material UI icons, Jetbrainsmono font, Google Analytics
+      </footer>
     </div>
     <script src="./public/js/portfolio.js"></script>
     <script>
