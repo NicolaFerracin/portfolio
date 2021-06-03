@@ -1,271 +1,250 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nicola Ferracin | Software Engineer</title>
-    <link rel="stylesheet" href="./public/css/stylesheet.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="theme-dark-wrapper">
-        <label class="theme-dark" for="darkMode">
-          <input type="checkbox" id="darkMode" name="dark-mode" onchange="toggleDarkMode(this)" />
-          <div class="slider round"></div>
-        </label>
-        <em>Dark mode</em>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicola Ferracin | Software Engineer</title>
+  <link rel="stylesheet" href="./public/css/stylesheet.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="theme-dark-wrapper">
+      <label class="theme-dark" for="darkMode">
+        <input type="checkbox" id="darkMode" name="dark-mode" onchange="toggleDarkMode(this)" />
+        <div class="slider round"></div>
+      </label>
+      <em>Dark mode</em>
+    </div>
+    <section id="intro">
+      <h1><strong>Nicola Ferracin</strong></h1>
+      <h2>
+        Software Engineer
+      </h2>
+      <p>I develop frontend applications with React.</p>
+      <p>During the day I work at [<a target="_blank" href="https://www.raisin.com/about-raisin/">Raisin GmbH</a>].</p>
+      <p>In my free time I try to [<a data-accordion="stay-relevant" href="#">stay relevant</a>], I love [<a href="#"
+          data-accordion="scripts-and-automation">automating things</a>] and [<a href="#"
+          data-accordion="scripts-and-automation">writing scripts</a>] and sometimes I build [<a href="#"
+          data-accordion="fullstack">fullstack applications</a>] for fun, learning and out of personal needs.</p>
+      <p>From time to time I do some [<a href="#" data-accordion="freelancing">freelancing projects</a>].</p>
+      <p>Besides coding all the time, I also do [<a href="#" data-accordion="other">other things</a>].</p>
+      <p>Check out my CV for more details on my career:</p>
+      <a class="intro-cv" href="./CV_NicolaFerracin.pdf" target="_blank"><span
+          class="material-icons">&#xe89e;</span>Open CV</a>
+    </section>
+    <hr />
+    <section id="stay-relevant">
+      <div class="accordion closed">
+        <h3><span class="hash">#</span> Stay Relevant</h3>
+        <span class="indicator"></span>
       </div>
-      <section id="intro">
-        <h1><strong>Nicola Ferracin</strong></h1>
-        <h2>
-          Software Engineer
-        </h2>
-        <p>I develop frontend applications with React.</p>
-        <p>During the day I work at [<a target="_blank" href="https://www.raisin.com/about-raisin/">Raisin GmbH</a>].</p>
-        <p>In my free time I try to [<a data-accordion="stay-relevant" href="#">stay relevant</a>], I love [<a href="#" data-accordion="scripts-and-automation">automating things</a>] and [<a href="#" data-accordion="scripts-and-automation">writing scripts</a>] and sometimes I build [<a href="#" data-accordion="projects">full-stack applications</a>] for fun, learning and out of personal needs.</p>
-        <p>From time to time I do some [<a href="#" data-accordion="freelancing">freelancing projects</a>].</p>
-        <p>Besides coding all the time, I also do [<a href="#" data-accordion="other">other things</a>].</p>
-        <p>Check out my CV for more details on my career:</p>
-        <a class="intro-cv" href="./CV_NicolaFerracin.pdf" target="_blank"><span class="material-icons">&#xe89e;</span>Open CV</a>
-      </section>
-      <hr />
-      <section id="stay-relevant">
-        <div class="accordion closed">
-          <h3><span class="hash">#</span> Stay Relevant</h3>
-          <span class="indicator"></span>
-        </div>
-        <div class="hidden">
-          <ul>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/sick-fits"
-                target="_blank"
-                >sick-fits</a
-              >
-              <p>
-                Fullstack Advanced React & GraphQL course by Wes Bos.
-                <br />
-                Course: <a href="https://advancedreact.com/" target="_blank">https://advancedreact.com/</a>
-              </p>
-            </li>
-            <li>
-              <a href="https://github.com/NicolaFerracin/css-grid" target="_blank"
-                >css-grid</a
-              >
-              <p>CSS Grid Video Course by Wes Bos.
-                <br />
-                Course: <a href="https://cssgrid.io/" target="_blank">https://cssgrid.io/</a></p>
-            </li>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/ComputerScience"
-                target="_blank"
-                >ComputerScience</a>
-              <p>
-                Repository containing all the projects completed following the courses suggested by the OpenSourceSociety University. Plus CS-related material as data structures and algorithms.
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/node-course"
-                target="_blank"
-                >node-course</a>
-              <p>
-                Fullstack node course by Wes Bos.
-                <br />
-                Course: <a href="https://learnnode.com/" target="_blank">https://learnnode.com/</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr />
-      <section id="scripts-and-automation">
-        <div class="accordion closed">
-          <h3><span class="hash">#</span> Scripts & Automation</h3>
-          <span class="indicator"></span>
-        </div>
-        <div class="hidden">
-          <ul>
-            <li>
-            <a
-              href="https://github.com/NicolaFerracin/new-tokens-listing"
-              target="_blank"
-              >new-tokens-listing</a
-            >
+      <div class="hidden">
+        <ul>
+          <li>
+            <a href="https://github.com/NicolaFerracin/sick-fits" target="_blank">sick-fits</a>
+            <p>
+              Fullstack Advanced React & GraphQL course by Wes Bos.
+              <br />
+              Course: <a href="https://advancedreact.com/" target="_blank">https://advancedreact.com/</a>
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/css-grid" target="_blank">css-grid</a>
+            <p>CSS Grid Video Course by Wes Bos.
+              <br />
+              Course: <a href="https://cssgrid.io/" target="_blank">https://cssgrid.io/</a>
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/ComputerScience" target="_blank">ComputerScience</a>
+            <p>
+              Repository containing all the projects completed following the courses suggested by the OpenSourceSociety
+              University. Plus CS-related material as data structures and algorithms.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/node-course" target="_blank">node-course</a>
+            <p>
+              Fullstack node course by Wes Bos.
+              <br />
+              Course: <a href="https://learnnode.com/" target="_blank">https://learnnode.com/</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <section id="scripts-and-automation">
+      <div class="accordion closed">
+        <h3><span class="hash">#</span> Scripts & Automation</h3>
+        <span class="indicator"></span>
+      </div>
+      <div class="hidden">
+        <ul>
+          <li>
+            <a href="https://github.com/NicolaFerracin/new-tokens-listing" target="_blank">new-tokens-listing</a>
             - <span class="excerpt">NodeJS app</span>
             <p>
-              Watch out for new Crypto listing announcements on Binance (blog) and Coinbase (Twitter and Medium) and use gate.io API to:
-              <ul>
+              Watch out for new Crypto listing announcements on Binance (blog) and Coinbase (Twitter and Medium) and use
+              gate.io API to:
+            <ul>
               <li>place automated buy orders</li>
               <li>place automated sell orders after some time</li>
               <li>log prices fluctuation</li>
             </ul>
             </p>
           </li>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/michelin-stars-restaurants-api"
-                target="_blank"
-                >michelin-stars-restaurants-api</a
-              >
-              - <span class="excerpt">NodeJS scraper + Go API</span>
-              <p>
-                Given the lack of official lists of Michelin Star Restaurants, I wrote an
-                application that scrapes the official Michelin page daily and then serves the list
-                of restaurants via an API endpoint built with Go.
-              </p>
-            </li>
-            <li>
-              <a href="https://github.com/NicolaFerracin/check-gdrive-files" target="_blank"
-                >check-gdrive-files</a
-              >
-              - <span class="excerpt">NodeJS script</span>
-              <p>Check if local files exist on Google Drive storage.</p>
-            </li>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/amazon-to-goodreads-exporter"
-                target="_blank"
-                >amazon-to-goodreads-exporter</a
-              >
-              - <span class="excerpt">NodeJS interactive command line tool</span>
-              <p>
-                Export your books from Amazon wishlists to Goodreads' shelves via the command line.
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/multiple-urls-images-downloader"
-                target="_blank"
-                >multiple-urls-images-downloader</a
-              >
-              - <span class="excerpt">npm package</span>
-              <p>
-                Given a list of page URLs, download images from each page and store them in separate
-                PDFs.
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/utils"
-                target="_blank"
-                >utils</a
-              >
-              - <span class="excerpt">GitHub repo</span>
-              <p>
-                A collection of useful commands and scripts, mainly for managing thousands of photos (renaming, sorting by aspect ratio, finding from list...) plus some useful commands to manage my VPS (Virtual Private Server).
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr />
-      <section id="projects">
-        <div class="accordion closed">
-          <h3><span class="hash">#</span> Projects</h3>
-          <span class="indicator"></span>
-        </div>
-        <div class="hidden">
-          <ul>
-            <li>
-              <a
-                href="https://github.com/NicolaFerracin/books-read"
-                target="_blank"
-                >books-read</a
-              >
-              <p>
-                Firebase and React project to keep track of books read, with basic stats.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr />
-      <section id="freelancing">
-        <div class="accordion closed">
-          <h3><span class="hash">#</span> Freelancing</h3>
-          <span class="indicator"></span>
-        </div>
-        <div class="hidden">
-          <ul>
-            <li>
-              <a href="https://crewrides.pt/" target="_blank">Crew Rides</a> - Not online anymore (2018)
-              - <span class="excerpt">Wordpress Website</span>
-              <p>
-                Customize a premium theme and optimize for marketing and SEO. Work in team with a
-                designer and a marketing expert. Self-hosted on a VPS.
-              </p>
-            </li>
-            <li>
-              <a href="https://sofiamacedo.com/" target="_blank">Sofia Macedo</a> (2017)
-              - <span class="excerpt">Wordpress Website</span>
-              <p>
-                Fully customized theme and widgets. Self hosted on OVH VPS server.
-              </p>
-            </li>
-            <li>
-              <a href="https://taadas.org" target="_blank">TAADAS</a> - Not online anymore (Tennessee Association of
-              Alcohol, Drug, and other Addiction Services) (2016) -
-              <span class="excerpt">Website built with Apostrophe CMS</span>
-              <p>
-                Full-stack project developed pro bono for TAADAS, a US-based NGO, as part of the
-                final assignments in the curriculum of FreeCodeCamp.com.
-              </p>
-            </li>
-            <li>
-              <a href="https://www.svec.org/" target="_blank">SVEC</a> (Silicon Valley Engineering
-              Council) (2016) -
-              <span class="excerpt">Website built with Apostrophe CMS</span>
-              <p>
-                Full-stack project developed pro bono for SVEC, a US-based NGO, as part of the final
-                assignments in the curriculum of FreeCodeCamp.com.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr />
-      <section id="other">
-        <div class="accordion closed">
-          <h3><span class="hash">#</span> Other Stuff</h3>
-          <span class="indicator"></span>
-        </div>
-        <div class="hidden">
-          <ul>
-            <li>
-              During 2018 and 2019 I worked remotely from around the world. I visited and stayed for some time in Spain, Italy, Portugal, Japan, Vietnam, Thailand, Laos, Cambodia, Colombia, Peru, Bolivia and Brasil. I'm now based in Portugal, where I live.
-            </li>
-            <li>
-              I like reading, playing videogames, hiking, playing the bass-guitar, act like I can play the guitar, travelling, languages (learning Japanese at the moment), splurge on Michelin starred restaurants.
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr />
-      <footer>
-        Built with HTML, CSS and vanilla JS.
-        <br/>
-        Dependencies: Material UI icons, Jetbrainsmono font, Google Analytics
-      </footer>
-    </div>
-    <script src="./public/js/portfolio.js"></script>
-    <script>
-      (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        (i[r] =
-          i[r] ||
-          function() {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-84316015-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
+          <li>
+            <a href="https://github.com/NicolaFerracin/michelin-stars-restaurants-api"
+              target="_blank">michelin-stars-restaurants-api</a>
+            - <span class="excerpt">NodeJS scraper + Go API</span>
+            <p>
+              Given the lack of official lists of Michelin Star Restaurants, I wrote an
+              application that scrapes the official Michelin page daily and then serves the list
+              of restaurants via an API endpoint built with Go.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/check-gdrive-files" target="_blank">check-gdrive-files</a>
+            - <span class="excerpt">NodeJS script</span>
+            <p>Check if local files exist on Google Drive storage.</p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/amazon-to-goodreads-exporter"
+              target="_blank">amazon-to-goodreads-exporter</a>
+            - <span class="excerpt">NodeJS interactive command line tool</span>
+            <p>
+              Export your books from Amazon wishlists to Goodreads' shelves via the command line.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/multiple-urls-images-downloader"
+              target="_blank">multiple-urls-images-downloader</a>
+            - <span class="excerpt">npm package</span>
+            <p>
+              Given a list of page URLs, download images from each page and store them in separate
+              PDFs.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/utils" target="_blank">utils</a>
+            - <span class="excerpt">GitHub repo</span>
+            <p>
+              A collection of useful commands and scripts, mainly for managing thousands of photos (renaming, sorting by
+              aspect ratio, finding from list...) plus some useful commands to manage my VPS (Virtual Private Server).
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <section id="fullstack">
+      <div class="accordion closed">
+        <h3><span class="hash">#</span> Fullstack</h3>
+        <span class="indicator"></span>
+      </div>
+      <div class="hidden">
+        <ul>
+          <li>
+            <a href="https://github.com/NicolaFerracin/books-read" target="_blank">books-read</a>
+            <p>
+              Firebase and React project to keep track of books read, with basic stats.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <section id="freelancing">
+      <div class="accordion closed">
+        <h3><span class="hash">#</span> Freelancing</h3>
+        <span class="indicator"></span>
+      </div>
+      <div class="hidden">
+        <ul>
+          <li>
+            <a href="https://crewrides.pt/" target="_blank">Crew Rides</a> - Not online anymore (2018)
+            - <span class="excerpt">Wordpress Website</span>
+            <p>
+              Customize a premium theme and optimize for marketing and SEO. Work in team with a
+              designer and a marketing expert. Self-hosted on a VPS.
+            </p>
+          </li>
+          <li>
+            <a href="https://sofiamacedo.com/" target="_blank">Sofia Macedo</a> (2017)
+            - <span class="excerpt">Wordpress Website</span>
+            <p>
+              Fully customized theme and widgets. Self hosted on OVH VPS server.
+            </p>
+          </li>
+          <li>
+            <a href="https://taadas.org" target="_blank">TAADAS</a> - Not online anymore (Tennessee Association of
+            Alcohol, Drug, and other Addiction Services) (2016) -
+            <span class="excerpt">Website built with Apostrophe CMS</span>
+            <p>
+              Fullstack project developed pro bono for TAADAS, a US-based NGO, as part of the
+              final assignments in the curriculum of FreeCodeCamp.com.
+            </p>
+          </li>
+          <li>
+            <a href="https://www.svec.org/" target="_blank">SVEC</a> (Silicon Valley Engineering
+            Council) (2016) -
+            <span class="excerpt">Website built with Apostrophe CMS</span>
+            <p>
+              Fullstack project developed pro bono for SVEC, a US-based NGO, as part of the final
+              assignments in the curriculum of FreeCodeCamp.com.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <section id="other">
+      <div class="accordion closed">
+        <h3><span class="hash">#</span> Other Stuff</h3>
+        <span class="indicator"></span>
+      </div>
+      <div class="hidden">
+        <ul>
+          <li>
+            During 2018 and 2019 I worked remotely from around the world. I visited and stayed for some time in Spain,
+            Italy, Portugal, Japan, Vietnam, Thailand, Laos, Cambodia, Colombia, Peru, Bolivia and Brasil. I'm now based
+            in Portugal, where I live.
+          </li>
+          <li>
+            I like reading, playing videogames, hiking, playing the bass-guitar, act like I can play the guitar,
+            travelling, languages (learning Japanese at the moment), splurge on Michelin starred restaurants.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      Built with HTML, CSS and vanilla JS.
+      <br />
+      Dependencies: Material UI icons, Jetbrainsmono font, Google Analytics
+    </footer>
+  </div>
+  <script src="./public/js/portfolio.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-84316015-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
 </html>
