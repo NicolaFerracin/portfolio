@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nicola Ferracin | Software Engineer</title>
+  <title>Nicola Ferracin | Senior Software Engineer</title>
   <link rel="stylesheet" href="./public/css/stylesheet.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
@@ -13,26 +13,64 @@
     <div class="theme-dark-wrapper">
       <label class="theme-dark" for="darkMode">
         <input type="checkbox" id="darkMode" name="dark-mode" onchange="toggleDarkMode(this)" />
-        <div class="slider round"></div>
+        <div class="slider round">
+          <span class="material-icons dark-mode-icon dark-mode-sun">&#xe518;</span>
+          <span class="material-icons dark-mode-icon dark-mode-moon">&#xe51c;</span>
+        </div>
       </label>
-      <em>Dark mode</em>
     </div>
     <section id="intro">
       <h1><strong>Nicola Ferracin</strong></h1>
       <h2>
-        Software Engineer
+        Senior Software Engineer
       </h2>
-      <p>I develop frontend applications with React.</p>
-      <p>During the day I work at [<a target="_blank" href="https://www.raisin.com/about-raisin/">Raisin GmbH</a>].</p>
-      <p>In my free time I try to [<a data-accordion="stay-relevant" href="#">stay relevant</a>], I love [<a href="#"
-          data-accordion="scripts-and-automation">automating things</a>] and [<a href="#"
-          data-accordion="scripts-and-automation">writing scripts</a>] and sometimes I build [<a href="#"
-          data-accordion="fullstack">fullstack applications</a>] for fun, learning and out of personal needs.</p>
-      <p>From time to time I do some [<a href="#" data-accordion="freelancing">freelancing projects</a>].</p>
-      <p>Besides coding all the time, I also do [<a href="#" data-accordion="other">other things</a>].</p>
-      <p>Check out my CV for more details on my career:</p>
-      <a class="intro-cv" href="./CV_NicolaFerracin.pdf" target="_blank"><span
-          class="material-icons">&#xe89e;</span>Open CV</a>
+      <p>I have <span id="experienceYears">>9000</span>+ years of experience with deep knowledge of JavaScript/TypeScript, React, testing and anything frontend.</p>
+      <p>I currently work at [<a target="_blank" href="https://www.raisin.com/about-raisin/">Raisin DS GmbH</a>] as a Senior Software Engineer.</p>
+      <p>In 2021 I started diving into the [<a href="#" data-accordion="blockchain">blockchain world</a>] by taking courses, developing bots (not the nasty type of bots!) and creating full-stack projects.</p>
+      <p>From time to time I do some [<a href="#" data-accordion="freelancing">freelancing work</a>].</p>
+      <p>In my free time I love [<a href="#" data-accordion="scripts-and-automation">automating things</a>] and [<a href="#" data-accordion="scripts-and-automation">writing scripts</a>]. I build [<a href="#" data-accordion="fullstack">full-stack applications</a>] for fun, learning and out of personal needs and I try to always [<a data-accordion="stay-relevant" href="#">stay relevant</a>],</p>
+      <p>Check out my CV for more details on my career and job: <a class="intro-cv" href="./CV_NicolaFerracin.pdf" target="_blank"><span
+        class="material-icons">&#xe89e;</span>Open CV</a></p>
+     
+    </section>
+    <section id="blockchain">
+      <div class="accordion closed">
+        <h3><span class="hash">#</span> Blockchain</h3>
+        <span class="indicator"></span>
+      </div>
+      <div class="hidden">
+        <ul>
+          <li>
+            Bots and scripts (private repos)
+            - <span class="excerpt">web3 + NodeJS</span>
+            <p>
+              I've built several trading bot and scripts performing different tasks in order to implement strategies for identifiying profitable opportunities in the crypto world.
+            </p>
+            <p>Some of the tasks performed are:</p>
+            <ul>
+              <li>scraping exchanges for useful information</li>
+              <li>using APIs to collect metadata</li>
+              <li>placing orders on both centralized (via API) and decentralized (via web3) exchanges</li>
+              <li>using web sockets waiting for a trigger event to happen</li>
+              <li>logging</li>
+              <li>deploying to a VPS for maximum uptime</li>
+            </ul>
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/ethereum-development/blob/main/cyot/README.md"
+              target="_blank">CYOT - Create Your Own Token</a> 
+            - <span class="excerpt">web3 + Next.js</span>
+            <p>Solidity contracts with a Next.js frontend to create an ERC20 token with one simple click.</p>
+          </li>
+          <li>
+            <a href="https://github.com/NicolaFerracin/solidity-course"
+              target="_blank">Ethereum and Solidity: The Complete Developer's Guide</a> 
+            - <span class="excerpt">Udemy course</span>
+            <p>Course by Stephen Grider to deep dive into Solidity and web3.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <hr />
     <section id="scripts-and-automation">
@@ -42,22 +80,6 @@
       </div>
       <div class="hidden">
         <ul>
-          <li>
-            Scripts related to the crypto world (private repos)
-            - <span class="excerpt">NodeJS</span>
-            <p>
-              During the last few months I've built several scripts performing different tasks in order to implement strategies for identifiying profitable opportunities in the crypto world.
-            </p>
-            <p>Some of the tasks performed are:</p>
-            <ul>
-              <li>scraping exchanges for new listings</li>
-              <li>using APIs to collect metadata</li>
-              <li>place orders on both centralized and decentralized exchanges</li>
-              <li>start web sockets waiting for a stop-loss or take-profit event to happen</li>
-              <li>logging</li>
-            </ul>
-            </p>
-          </li>
           <li>
             <a href="https://github.com/NicolaFerracin/michelin-stars-restaurants-api"
               target="_blank">michelin-stars-restaurants-api</a>
@@ -104,7 +126,7 @@
     <hr />
     <section id="fullstack">
       <div class="accordion closed">
-        <h3><span class="hash">#</span> Fullstack</h3>
+        <h3><span class="hash">#</span> Full-Stack</h3>
         <span class="indicator"></span>
       </div>
       <div class="hidden">
@@ -127,7 +149,7 @@
       <div class="hidden">
         <ul>
           <li>
-            <a href="https://crewrides.pt/" target="_blank">Crew Rides</a> - Not online anymore (2018)
+            <a href="https://crewrides.pt/" target="_blank">Crew Rides</a> - offline (2018)
             - <span class="excerpt">Wordpress Website</span>
             <p>
               Customize a premium theme and optimize for marketing and SEO. Work in team with a
@@ -146,7 +168,7 @@
             Alcohol, Drug, and other Addiction Services) (2016) -
             <span class="excerpt">Website built with Apostrophe CMS</span>
             <p>
-              Fullstack project developed pro bono for TAADAS, a US-based NGO, as part of the
+              Full-stack project developed pro bono for TAADAS, a US-based NGO, as part of the
               final assignments in the curriculum of FreeCodeCamp.com.
             </p>
           </li>
@@ -155,7 +177,7 @@
             Council) (2016) -
             <span class="excerpt">Website built with Apostrophe CMS</span>
             <p>
-              Fullstack project developed pro bono for SVEC, a US-based NGO, as part of the final
+              Full-stack project developed pro bono for SVEC, a US-based NGO, as part of the final
               assignments in the curriculum of FreeCodeCamp.com.
             </p>
           </li>
@@ -174,7 +196,7 @@
           <li>
             <a href="https://github.com/NicolaFerracin/sick-fits" target="_blank">sick-fits</a>
             <p>
-              Fullstack Advanced React & GraphQL course by Wes Bos.
+              Full-stack Advanced React & GraphQL course by Wes Bos.
               <br />
               Course: <a href="https://advancedreact.com/" target="_blank">https://advancedreact.com/</a>
             </p>
@@ -196,7 +218,7 @@
           <li>
             <a href="https://github.com/NicolaFerracin/node-course" target="_blank">node-course</a>
             <p>
-              Fullstack node course by Wes Bos.
+              Full-stack node course by Wes Bos.
               <br />
               Course: <a href="https://learnnode.com/" target="_blank">https://learnnode.com/</a>
             </p>
@@ -205,50 +227,13 @@
       </div>
     </section>
     <hr />
-    <section id="other">
-      <div class="accordion closed">
-        <h3><span class="hash">#</span> Other Stuff</h3>
-        <span class="indicator"></span>
-      </div>
-      <div class="hidden">
-        <ul>
-          <li>
-            During 2018 and 2019 I worked remotely from around the world. I visited and stayed for some time in Spain,
-            Italy, Portugal, Japan, Vietnam, Thailand, Laos, Cambodia, Colombia, Peru, Bolivia and Brasil. I'm now based
-            in Portugal.
-          </li>
-          <li>
-            I like reading, playing videogames, hiking, playing the bass-guitar, act like I can play the guitar,
-            travelling, languages (learning Japanese at the moment).
-          </li>
-        </ul>
-      </div>
-    </section>
-    <hr />
     <footer>
-      Built with HTML, CSS and vanilla JS.
+      Built with plain HTML, CSS and JS.
       <br />
-      Dependencies: Material UI icons, Jetbrainsmono font, Google Analytics
+      Dependencies: Material UI icons, Jetbrainsmono font
     </footer>
   </div>
   <script src="./public/js/portfolio.js"></script>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      (i[r] =
-        i[r] ||
-        function () {
-          (i[r].q = i[r].q || []).push(arguments);
-        }),
-        (i[r].l = 1 * new Date());
-      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m);
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-84316015-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 </body>
 
 </html>

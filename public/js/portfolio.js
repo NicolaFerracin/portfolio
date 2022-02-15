@@ -1,22 +1,25 @@
-(function() {
+(function () {
   document
-    .querySelectorAll('.accordion')
-    .forEach(a => a.addEventListener('click', toggleAccordion));
+    .querySelectorAll(".accordion")
+    .forEach((a) => a.addEventListener("click", toggleAccordion));
 
   document
-    .querySelectorAll('a[data-accordion]')
-    .forEach(a => a.addEventListener('click', openAccordionLink));
+    .querySelectorAll("a[data-accordion]")
+    .forEach((a) => a.addEventListener("click", openAccordionLink));
 
   const isDarkModeActive =
-    localStorage.getItem('darkMode') !== null
-      ? localStorage.getItem('darkMode') === 'true'
-      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    localStorage.getItem("darkMode") !== null
+      ? localStorage.getItem("darkMode") === "true"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
   setDarkMode(isDarkModeActive);
+
+  document.getElementById("experienceYears").innerText =
+    new Date().getFullYear() - 2016;
 })();
 
-const OPEN_STATE = 'open';
-const CLOSED_STATE = 'closed';
-const HIDDEN_CLASS_NAME = 'hidden';
+const OPEN_STATE = "open";
+const CLOSED_STATE = "closed";
+const HIDDEN_CLASS_NAME = "hidden";
 
 function openAccordionLink() {
   const accordionName = this.dataset.accordion;
@@ -25,14 +28,15 @@ function openAccordionLink() {
 }
 
 function closeAllAccordions() {
-  document.querySelectorAll('.accordion').forEach(closeAccordion);
+  document.querySelectorAll(".accordion").forEach(closeAccordion);
 }
 
 function openAccordion(accordionEl, scroll = false) {
   accordionEl.classList.remove(CLOSED_STATE);
   accordionEl.classList.add(OPEN_STATE);
   accordionEl.nextElementSibling.classList.remove(HIDDEN_CLASS_NAME);
-  if (scroll) setTimeout(() => accordionEl.scrollIntoView(), 0);
+  if (scroll)
+    setTimeout(() => accordionEl.scrollIntoView({ behavior: "smooth" }), 0);
 }
 
 function closeAccordion(accordionEl) {
@@ -49,9 +53,9 @@ function toggleAccordion(e) {
 }
 
 function setDarkMode(darkMode) {
-  localStorage.setItem('darkMode', darkMode);
-  document.getElementById('darkMode').checked = darkMode;
-  document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : '');
+  localStorage.setItem("darkMode", darkMode);
+  document.getElementById("darkMode").checked = darkMode;
+  document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "");
 }
 
 function toggleDarkMode(e) {
