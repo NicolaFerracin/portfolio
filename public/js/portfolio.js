@@ -1,3 +1,7 @@
+const OPEN_STATE = "open";
+const CLOSED_STATE = "closed";
+const HIDDEN_CLASS_NAME = "hidden";
+
 (function () {
   document
     .querySelectorAll(".accordion")
@@ -15,11 +19,11 @@
 
   document.getElementById("experienceYears").innerText =
     new Date().getFullYear() - 2016;
-})();
 
-const OPEN_STATE = "open";
-const CLOSED_STATE = "closed";
-const HIDDEN_CLASS_NAME = "hidden";
+  const { hash } = document.location;
+  if (hash)
+    openAccordion(document.querySelector(`${hash} .${CLOSED_STATE}`), true);
+})();
 
 function openAccordionLink() {
   const accordionName = this.dataset.accordion;
@@ -36,7 +40,7 @@ function openAccordion(accordionEl, scroll = false) {
   accordionEl.classList.add(OPEN_STATE);
   accordionEl.nextElementSibling.classList.remove(HIDDEN_CLASS_NAME);
   if (scroll)
-    setTimeout(() => accordionEl.scrollIntoView({ behavior: "smooth" }), 0);
+    setTimeout(() => accordionEl.scrollIntoView({ behavior: "smooth" }), 10);
 }
 
 function closeAccordion(accordionEl) {
