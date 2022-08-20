@@ -7,6 +7,7 @@
   --text-color: #393939;
   --link-hover: black;
   --green: #66bb6a;
+  --bold-text: black;
 }
 
 [data-theme="dark"] {
@@ -14,8 +15,9 @@
   --container-bg: #262626;
   --primary-color: #1795b0;
   --divider-color: var(--bg-color);
-  --text-color: #e6e6e6;
+  --text-color: #d3d3d3;
   --link-hover: #b8b8b8;
+  --bold-text: white;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
   src: url("../fonts/jetbrainsmono-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -30,6 +33,7 @@
   src: url("../fonts/jetbrainsmono-italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -37,9 +41,13 @@
   src: url("../fonts/jetbrainsmono-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
-* {
+body {
+  font-family: sans-serif;
+}
+.fonts-loaded body {
   font-family: "mono", "Roboto", sans-serif;
 }
 
@@ -71,6 +79,10 @@ h4 {
 
 h5 {
   font-size: 1.2rem;
+}
+
+strong {
+  color: var(--bold-text);
 }
 
 ul {
@@ -137,18 +149,6 @@ ul > li > p {
 
 .accordion > h3 {
   margin: 0;
-}
-
-.accordion > span.indicator {
-  font-size: 2rem;
-}
-
-.accordion.inactive span.indicator:before {
-  content: "+";
-}
-
-.accordion.active span.indicator:before {
-  content: "-";
 }
 
 .hidden {
@@ -235,16 +235,6 @@ input:checked + .slider:before {
 
 #intro {
   margin-bottom: 30px;
-}
-
-#intro .intro-cv {
-  display: inline-flex;
-  align-items: center;
-}
-
-#intro .intro-cv .material-icons {
-  margin-right: 5px;
-  font-size: 15px;
 }
 
 footer {
